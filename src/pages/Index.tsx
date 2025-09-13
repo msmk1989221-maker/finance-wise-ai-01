@@ -1,9 +1,12 @@
 import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
 import { OverviewCards } from "@/components/dashboard/OverviewCards";
 import { SpendingChart } from "@/components/dashboard/SpendingChart";
+import { PredictiveChart } from "@/components/dashboard/PredictiveChart";
 import { ExpenseCategories } from "@/components/dashboard/ExpenseCategories";
 import { RecentTransactions } from "@/components/dashboard/RecentTransactions";
 import { FinancialGoals } from "@/components/dashboard/FinancialGoals";
+import { AIInsights } from "@/components/dashboard/AIInsights";
+import { BudgetAlerts } from "@/components/dashboard/BudgetAlerts";
 
 const Index = () => {
   return (
@@ -14,23 +17,32 @@ const Index = () => {
         {/* Overview Cards */}
         <OverviewCards />
         
+        {/* AI Predictive Analytics */}
+        <PredictiveChart />
+        
         {/* Main Dashboard Grid */}
         <div className="grid gap-6 lg:grid-cols-3">
-          {/* Spending Chart - takes 2 columns */}
+          {/* Traditional Spending Chart */}
           <SpendingChart />
           
           {/* Expense Categories */}
           <ExpenseCategories />
         </div>
         
-        {/* Secondary Grid */}
-        <div className="grid gap-6 lg:grid-cols-2">
+        {/* AI-Enhanced Secondary Grid */}
+        <div className="grid gap-6 lg:grid-cols-3">
           {/* Recent Transactions */}
           <RecentTransactions />
           
           {/* Financial Goals */}
           <FinancialGoals />
+          
+          {/* AI Insights */}
+          <AIInsights />
         </div>
+        
+        {/* Budget Management */}
+        <BudgetAlerts />
       </main>
     </div>
   );

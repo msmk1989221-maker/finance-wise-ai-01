@@ -48,6 +48,11 @@ All colors MUST be HSL.
     --savings: 160 60% 45%;
     --investment: 260 60% 55%;
     
+    /* AI and prediction colors */
+    --ai-primary: 260 84% 60%;
+    --ai-secondary: 260 84% 88%;
+    --prediction: 330 81% 60%;
+    
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 45%), hsl(220 60% 55%));
     --gradient-success: linear-gradient(135deg, hsl(120 60% 50%), hsl(160 60% 45%));
@@ -112,6 +117,11 @@ All colors MUST be HSL.
     --income: 120 60% 50%;
     --savings: 160 60% 45%;
     --investment: 260 60% 55%;
+    
+    /* AI and prediction colors - dark mode */
+    --ai-primary: 260 84% 70%;
+    --ai-secondary: 260 84% 25%;
+    --prediction: 330 81% 70%;
     
     /* Gradients - dark mode */
     --gradient-primary: linear-gradient(135deg, hsl(210 100% 60%), hsl(220 60% 55%));
